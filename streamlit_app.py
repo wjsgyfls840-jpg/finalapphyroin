@@ -13,7 +13,7 @@ st.write("우리 주변에 숨겨진 재밌는 규칙들을 찾으러 함께 떠
 # 시각적인 구분을 위한 선
 st.markdown("---")
 
-# 3. 탐험지 카드들 (3개 옵션)
+# 3. 탐험지 카드들 (2개 옵션)
 st.markdown("### 🗺️ 너가 탐험할 수 있는 곳이야! ")
 
 # 1번 탐험지: 이모지 모양 규칙
@@ -29,20 +29,7 @@ st.markdown(
 
 st.write("")
 
-# 2번 탐험지: 수의 배열 규칙
-st.markdown(
-    """
-    <div style="background-color: #4fc3f7; padding: 15px; border-radius: 10px; text-align: center; height: 100px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
-        <h3 style="margin: 0; color: white;">🔢 수의 배열 규칙</h3>
-        <p style="margin: 5px 0 0 0; color: white; font-size: 13px;">숫자들이 따라가는 규칙을 찾아봐!</p>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.write("")
-
-# 3번 탐험지: 직접 규칙 만들기
+# 2번 탐험지: 직접 규칙 만들기
 st.markdown(
     """
     <div style="background-color: #f48fb1; padding: 15px; border-radius: 10px; text-align: center; height: 100px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
@@ -60,7 +47,7 @@ st.markdown("---")
 st.markdown("#### 💡 이렇게 탐험해 봐요!")
 
 guide_text = """
-1. 👀 위의 3가지 탐험지를 살펴봐요!
+1. 👀 위의 2가지 탐험지를 살펴봐요!
 2. 🔍 **왼쪽 사이드바 메뉴**에서 원하는 탐험지를 클릭해요!
 3. 🎉 각 탐험지에서 재밌는 문제들을 풀어봐요!
 """
