@@ -14,53 +14,44 @@ st.write("우리 주변에 숨겨진 재밌는 규칙들을 찾으러 함께 떠
 st.markdown("---")
 
 # 3. 탐험지 카드들 (3개 옵션)
-st.markdown("### 🗺️ 탐험할 곳을 선택해봐! ")
-
-col1, col2 = st.columns(2)
+st.markdown("### 🗺️ 너가 탐험할 수 있는 곳이야! ")
 
 # 1번 탐험지: 이모지 모양 규칙
-with col1:
-    st.markdown(
-        """
-        <div style="background-color: #ffb74d; padding: 20px; border-radius: 10px; text-align: center; height: 200px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
-            <h2 style="margin: 0; color: white;">🎨 이모지 모양 규칙</h2>
-            <p style="margin: 10px 0 0 0; color: white; font-size: 14px;">알록달록한 이모지들의 패턴을 찾아봐!</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    if st.button("📍 이모지 탐험하기", use_container_width=True, key="emoji_btn"):
-        st.switch_page("pages/이모지 모양 규칙.py")
+st.markdown(
+    """
+    <div style="background-color: #ffb74d; padding: 15px; border-radius: 10px; text-align: center; height: 100px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
+        <h3 style="margin: 0; color: white;">🎨 이모지 모양 규칙</h3>
+        <p style="margin: 5px 0 0 0; color: white; font-size: 13px;">알록달록한 이모지들의 패턴을 찾아봐!</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.write("")
 
 # 2번 탐험지: 수의 배열 규칙
-with col2:
-    st.markdown(
-        """
-        <div style="background-color: #4fc3f7; padding: 20px; border-radius: 10px; text-align: center; height: 200px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
-            <h2 style="margin: 0; color: white;">🔢 수의 배열 규칙</h2>
-            <p style="margin: 10px 0 0 0; color: white; font-size: 14px;">숫자들이 따라가는 규칙을 찾아봐!</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    if st.button("📍 숫자 탐험하기", use_container_width=True, key="number_btn"):
-        st.switch_page("pages/수의 배열 규칙.py")
+st.markdown(
+    """
+    <div style="background-color: #4fc3f7; padding: 15px; border-radius: 10px; text-align: center; height: 100px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
+        <h3 style="margin: 0; color: white;">🔢 수의 배열 규칙</h3>
+        <p style="margin: 5px 0 0 0; color: white; font-size: 13px;">숫자들이 따라가는 규칙을 찾아봐!</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
-col3, col4, col5 = st.columns(3)
+st.write("")
 
 # 3번 탐험지: 직접 규칙 만들기
-with col4:
-    st.markdown(
-        """
-        <div style="background-color: #f48fb1; padding: 20px; border-radius: 10px; text-align: center; height: 200px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
-            <h2 style="margin: 0; color: white;">🎨 나만의 규칙</h2>
-            <p style="margin: 10px 0 0 0; color: white; font-size: 14px;">직접 규칙을 만들어서 보여줄래?</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    if st.button("📍 규칙 만들기", use_container_width=True, key="create_btn"):
-        st.switch_page("pages/직접 규칙 만들기.py")
+st.markdown(
+    """
+    <div style="background-color: #f48fb1; padding: 15px; border-radius: 10px; text-align: center; height: 100px; display: flex; flex-direction: column; justify-content: center; cursor: pointer;">
+        <h3 style="margin: 0; color: white;">🎨 나만의 규칙</h3>
+        <p style="margin: 5px 0 0 0; color: white; font-size: 13px;">직접 규칙을 만들어서 보여줄래?</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 # 시각적인 구분을 위한 선
 st.markdown("---")
@@ -69,11 +60,11 @@ st.markdown("---")
 st.markdown("#### 💡 이렇게 탐험해 봐요!")
 
 guide_text = """
-1. 👀 위의 3가지 탐험지 중에서 마음에 드는 곳을 선택해요!
-2. 🎯 각 탐험지에서 재밌는 문제들을 풀어봐요!
-3. 🎉 정답을 맞추면 풍선과 눈이 날려~~ 축하해줄 거야!
+1. 👀 위의 3가지 탐험지를 살펴봐요!
+2. 🔍 **왼쪽 사이드바 메뉴**에서 원하는 탐험지를 클릭해요!
+3. 🎉 각 탐험지에서 재밌는 문제들을 풀어봐요!
 """
 st.info(guide_text)
 
 # 하단에 아이들의 흥미를 돋우는 귀여운 문구 추가
-st.markdown("#### 👆 위의 탐험지 중에서 하나를 선택하고 꾹 눌러줘! 🚀")
+st.markdown("#### 👈 준비가 되었다면 왼쪽 사이드바 메뉴를 꾹 눌러줘! 🚀")
